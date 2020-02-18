@@ -18,7 +18,12 @@ class String
     counter = 0
     
     sentences = self.split(/[.!?]/)
-    counter = sentences.count
+    sentences.each do |s|
+      if(s.count > 1)
+        counter += 1
+      end
+    end
+   
     
     counter
     
