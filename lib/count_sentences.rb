@@ -17,7 +17,7 @@ class String
   def count_sentences
     counter = 0
     
-    sentences = self.split(".", "?", "!")
+    sentences = self.split(/[.!?]/)
     counter = sentences.count
     
     counter
