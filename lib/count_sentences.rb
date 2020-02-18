@@ -21,6 +21,7 @@ class String
     sentences.each do |s|
       #if(s.count >= 1)
         counter += 1
+        puts s
       #end
     end
    
